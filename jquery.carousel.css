@@ -16,8 +16,8 @@
 .carousel-arrow .fas:hover{
   color: #eee;
 }
-.fas{
-  font-size: 25px;
+.carousel .fas{
+  font-size: 35px;
   margin-right: 10px;
   text-shadow: 0 2px 3px #333;
 }
