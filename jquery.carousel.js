@@ -11,6 +11,7 @@
       background: 'white',
       pictureWidth: 1000,
       pictureMargin: 100,
+      picturePadding: 10
     };
 
     var settings = $.extend(defaults, options);
@@ -33,7 +34,10 @@
 
 
     //STYLES
-    $('.carousel-hider').css('width', settings.pictureWidth);
+    $('.carousel-hider').css({
+      'width': settings.pictureWidth + settings.picturePadding * 2,
+      'padding': settings.picturePadding
+    });
     $carouselUl.find('.carousel-li').css({
       'background': settings.background,
       'marginRight': settings.pictureMargin
